@@ -12,6 +12,7 @@ body{
 :root{
     --primary-color: rgb(230, 83, 60);
     --secondary-color: rgb(255, 255, 255);
+    --body-color: rgb(0, 0, 0);
 }
 /* reusable component */
 .btn{
@@ -20,6 +21,7 @@ body{
     font-size: 18px;
     font-weight: 600;
     padding: 16px 40px 16px 40px;
+    text-decoration: none;
 }
 .header_section{
     max-width: 1440px;
@@ -71,4 +73,118 @@ header{
     padding: 0 16px  0 16px;
 }
 
+/* banner css  start*/
+.banner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.play_button{
+    display: flex;
+    justify-content: center;
+}
+.banner_title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 78px;
+    font-weight: 900;
+}
+.banner_description{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 28px 0px;
+}
+.btn_group{
+    display: flex;
+    gap: 15px;
+}
+.banner_btn1{
+    transition: 0.4s;
+    background-color: var(--primary-color);
+    border-radius: 42px;
+}
+.banner_btn2{
+    border: 1px solid var(--secondary-color);
+    border-radius: 42px;
+}
+.banner_btn1:hover{
+    background-color: var(--secondary-color);
+    color: var(--body-color);
+    transition: 0.5s;
+}
+.banner_btn2:hover{
+    background-color: var(--secondary-color);
+    color: var(--body-color);
+    /* border: none; */
+    transition: 0.5s;
+}
+.banner_images{
+    position: relative;
+}
+
+.tutorial{
+    position: absolute;
+    top: 72%;
+    left: -25%;
+    width: 206px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+.tutorial_title{
+    color: rgb(250, 250, 249);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+}
+.tutorial_description{
+    color: rgba(239, 237, 232, 0.65);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+.videos{
+    position: absolute;
+    bottom: 61%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 193px;
+    height: 98px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(20px);
+}
+.videos_title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 900;
+}
+.videos_description{
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+}
+/* banner css  end*/
 /* header css end */
