@@ -538,7 +538,9 @@ margin-top: 14px;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     margin-top: 80px;
-
+    border-radius: 18px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
 }
 .member{
     position: relative;
@@ -822,6 +824,13 @@ margin-top: 40px;
         /* team css start */
         .team_member{
             grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+           margin-left: 10px;
+           margin-right: 10px;
+        }
+        .member_img{
+            width: 313px;
+height: 272px;
         }
         /* team css end */
         /* wgy choose us start */
