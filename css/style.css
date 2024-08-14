@@ -832,6 +832,10 @@ margin-top: 40px;
             width: 313px;
 height: 272px;
         }
+        .member_info{
+            bottom: 13%;
+            left: 13%;
+        }
         /* team css end */
         /* wgy choose us start */
         .features{
