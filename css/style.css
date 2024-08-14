@@ -828,6 +828,9 @@ margin-top: 40px;
            margin-left: 10px;
            margin-right: 10px;
         }
+        .team_title,.advertisement_title,.why-choose-us h2{
+            font-size: 32px;
+        }
         .member_img{
             width: 313px;
 height: 272px;
