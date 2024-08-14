@@ -4,7 +4,6 @@
 *{
     padding: 0;
     margin: 0;
-    /* overflow-x: hidden; */
 }
 body{
     box-sizing: border-box;
@@ -301,10 +300,12 @@ display: none;
 }
 .bmi_content_bg{
     background: rgb(34, 34, 34);
+    padding: 40px;
 }
 .bmi_content{
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
 }
 .bmi-table {
     margin-top: 40px;
@@ -781,9 +782,14 @@ margin-top: 40px;
         }
         .advertisement_description{
             width: 287px;
+            text-align: start;
+            line-break: normal;
         }
         /* .advertisement  responsive end*/
         /* bmi responsive start */
+        .bmi_content_bg{
+            padding: 0;
+        }
         .bmi_content{
             flex-direction: column;
         }
